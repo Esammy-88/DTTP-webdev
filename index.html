@@ -2,34 +2,83 @@
 <html>
 
 <head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>My Web Development Journey</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #efeee7;
+            font-family: Georgia, "Times New Roman", Times, serif;
+            color: #333333;
+        }
+        header {
+            background-color: #333333;
+        }
+        header h1 {
+            color: #eee;
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 24px;
+        }
+        .container {
+            width: 1024px;
+            margin: 0 auto;
+        }
+        #main-bio, #contact-info, #bio-image {
+            float: left;
+        }
+        #bio-image {
+            width: 200px;
+            margin-right: 20px; /* Adjust margin as needed */
+        }
+        #main-bio {
+            width: 70%;
+        }
+        #contact-info {
+            width: 30%;
+            line-height: 1.5; /* 1.5 times the font size */
+        }
+        a {
+            color: #d21034;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Sammy's DTTP Journey</h1>
+    <header>
+        <h1>Sammy's DTTP Journey</h1>
+    </header>
 
-    <h2>About Me</h2>
-    <p>Hi, I'm Sammy Eyongorock, a passionate Software Engineering Student on a journey to master Web Development.
-        At 20 years old, I combine my love for coding with hobbies like soccer and reading.</p>
+    <div class="container">
+        <section id="main-bio">
+            <h2>About Me</h2>
+            <p>Hi, I'm Sammy Eyongorock, a passionate Software Engineering Student on a journey to master Web Development.
+                At 20 years old, I combine my love for coding with hobbies like soccer and reading.</p>
 
-    <h2>DTTP Journey</h2>
-    <p>
-        "Embarking on the web development journey, the first few weeks have been a thrilling blend of challenges and discoveries. 
-        Grasping the basics of HTML, every line of code feels like a step towards building a digital world of possibilities. 
-        Excited for the learning ahead. #WebDevBeginner"</p>
+            <h2>DTTP Journey</h2>
+            <p>"Embarking on the web development journey, the first few weeks have been a thrilling blend of challenges and discoveries. 
+                Grasping the basics of HTML, every line of code feels like a step towards building a digital world of possibilities. 
+                Excited for the learning ahead. #WebDevBeginner"</p>
+        </section>
 
-    <!-- Image 1 -->
-    <img src="Images/Web baby.jpg" alt="Web Baby">
+        <section id="contact-info">
+            <h2>Contact Information</h2>
+            <p>For appointments or inquiries, feel free to reach out:</p>
+            <address>
+                Email: eyongsammy72@gmail.com<br>
+                Phone: +1 343-5582067
+            </address>
+        </section>
 
-    <!-- Image 2 -->
-    <img src="C:\Users\eyong\Pictures\Screenshots\SkillHat.png" alt="Skill Hat Screenshot">
+        <div id="bio-image">
+            <!-- Image 1 -->
+            <img src="Images/Web baby.jpg" alt="Web Baby">
+            <!-- Image 2 -->
+            <img src="C:\Users\eyong\Pictures\Screenshots\SkillHat.png" alt="Skill Hat Screenshot">
+        </div>
+    </div>
+</body>
 
-
-
-
-    <h2>Contact Information</h2>
-    <p>For appointments or inquiries, feel free to reach out:</p>
-    <address>
-        Email: eyongsammy72@gmail.com<br>
-        Phone: +1 343-5582067
-    </address>
+</html>
