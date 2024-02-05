@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- Add your access key as a hidden input field -->
+        <input type="hidden" name="apikey" value="be293a39-ba3a-4631-bb2e-3dd405eff740">
+        <!-- Custom subject line -->
+        <input type="hidden" name="subject" value="New Contact Form Submission">
+        <!-- Custom From Name -->
+        <input type="hidden" name="from_name" value="Your Portfolio Site">
+
+        <!-- Name field -->
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- Email field -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Message field -->
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
