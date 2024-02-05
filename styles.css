@@ -1,32 +1,62 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Contact Us Form</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
-    <form action="https://api.web3forms.com/submit" method="POST">
-        <!-- Add your access key as a hidden input field -->
-        <input type="hidden" name="apikey" value="be293a39-ba3a-4631-bb2e-3dd405eff740">
-        <!-- Custom subject line -->
-        <input type="hidden" name="subject" value="New Contact Form Submission">
-        <!-- Custom From Name -->
-        <input type="hidden" name="from_name" value="Your Portfolio Site">
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #efeee7;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #333333;
+}
 
-        <!-- Name field -->
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
+header {
+    background-color: #333333;
+    padding: 20px;
+    text-align: center;
+}
 
-        <!-- Email field -->
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
+header h1 {
+    color: #eee;
+    font-size: 24px;
+    margin: 0;
+}
 
-        <!-- Message field -->
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-        <!-- Submit button -->
-        <input type="submit" value="Send">
-    </form>
-</body>
-</html>
+section {
+    margin-bottom: 20px;
+}
+
+#main-bio,
+#contact-info,
+#bio-image {
+    float: left;
+    width: calc(100% / 3 - 10px);
+    margin-right: 20px;
+}
+
+#main-bio {
+    clear: both;
+    margin-bottom: 20px;
+}
+
+#bio-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    #main-bio,
+    #contact-info,
+    #bio-image {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+}
